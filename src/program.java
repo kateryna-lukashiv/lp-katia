@@ -1,6 +1,12 @@
+/*Class for Lucas number*/
 
 public class program {
-    public static void main(String[] args) {
-        System.out.printf("Hello");
+    private int number;
+
+    public int getNumber(){
+        return number;
+    }
+    public void setNumber(int number){
+        this.number = number ;
     }
 }
