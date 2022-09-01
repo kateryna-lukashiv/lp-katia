@@ -3,17 +3,16 @@ import java.util.Scanner;
 
 public class main {
 
-    // Function for generating Lucas number
+    // функція для генерування чисел Люка
     public static int generationLucas(int n) {
 
-        // declaring base values
-        // for positions 0 and 1
+        // задаємо першн і друге число
         int first = 2, second = 1, sum;
 
         if (n == 0)
             return first;
 
-        // generating next number of Lucas sequence
+        // генеруємо наступні числа Люка
         for (int i = 2; i <= n; i++) {
 
             sum = first + second;
@@ -24,7 +23,8 @@ public class main {
         return second;
     }
 
-  private static void fillPrintArr(program[] arr, int amount)
+   //виводимо на екран масив чисел
+    private static void fillPrintArr(program[] arr, int amount)
     {
         for (int i = 0; i < amount; i++) {
 
@@ -36,8 +36,7 @@ public class main {
 
     }
 
-// Checks if there are numbers that could be represented by formula
-// w^3 - 1
+// перевіряємо чи є числа,які можна представити формулою w^3 - 1
 
     private static void findByFormula(program[] arr) {
 
@@ -56,12 +55,12 @@ public class main {
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);
-        System.out.print(" Enter the number of elements in the Lucas sequence: ");
+        System.out.print(" Enter the N: ");
         int amount = in.nextInt();
         System.out.print(" Lucas sequence: ");
 
         program[] arr = new program[amount];
-       fillPrintArr(arr,amount);
+        fillPrintArr(arr,amount);
         findByFormula(arr);
     }
 

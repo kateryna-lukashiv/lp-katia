@@ -1,4 +1,4 @@
-/*Class for Lucas number*/
+/*клас для чисел Люка*/
 
 public class program {
     private int number;
@@ -7,6 +7,7 @@ public class program {
         return number;
     }
     public void setNumber(int number){
+
         this.number = number ;
     }
 }
