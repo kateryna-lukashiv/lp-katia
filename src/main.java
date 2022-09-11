@@ -1,14 +1,17 @@
-
 import java.util.Scanner;
-
 public class main {
 
-    // функція для генерування чисел Люка
+    /**
+     *
+     * @param n
+    for a sequence of numbers
+     * @return Luke's number
+     */
+
     public static int generationLucas(int n) {
 
-        // задаємо першн і друге число
+        // задаємо перше і друге число
         int first = 2, second = 1, sum;
-
         if (n == 0)
             return first;
 
@@ -23,6 +26,13 @@ public class main {
         return second;
     }
 
+    /**
+     *
+     * @param arr
+    to record each number
+     * @param amount
+    entering a certain amount
+     */
    //виводимо на екран масив чисел
     private static void fillPrintArr(program[] arr, int amount)
     {
@@ -36,8 +46,10 @@ public class main {
 
     }
 
-// перевіряємо чи є числа,які можна представити формулою w^3 - 1
-
+    /**
+     *  check whether there are numbers that can be represented by the formula w^3 - 1
+     * @param arr
+     */
     private static void findByFormula(program[] arr) {
 
         System.out.print("\n\n Numbers that could be represented as w^3 - 1");
@@ -51,14 +63,18 @@ public class main {
         }
     }
 
+    /**
+     *
+     * @param args new array
+     */
 
-    public static void main(String[] args){
+    public static void main(String[] args)
+    {
 
         Scanner in = new Scanner(System.in);
         System.out.print(" Enter the N: ");
         int amount = in.nextInt();
         System.out.print(" Lucas sequence: ");
-
         program[] arr = new program[amount];
         fillPrintArr(arr,amount);
         findByFormula(arr);
